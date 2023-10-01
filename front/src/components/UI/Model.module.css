@@ -1,0 +1,19 @@
+.wrap{
+    display: flex;
+    z-index: 3;
+    align-items: center;
+    flex-direction: column;
+    margin: 400px 0 0 0;
+    padding: 0 0 100px 0;
+    color: white;
+    font-size: 40px;
+    background-color: rgb(34, 34, 34);
+}
+
+@media (max-width: 500px) {
+    .wrap{
+        margin: 300px 0 0 0;
+        padding: 0 0 100px 0;
+        font-size: 30px;
+    }
+}

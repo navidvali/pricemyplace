@@ -1,0 +1,244 @@
+.mdimagewrap .modelaftr{
+    width: 700px;
+    height: 700px;
+    z-index: 3;
+}
+
+.mdimagewrap {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 50px;
+    width: 800px;
+    height: 680px;
+    margin: 30px auto 30px auto;
+    overflow: hidden;
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    box-sizing: border-box;
+}
+
+.backbtn{
+    font-size: 40px;
+    color: white;
+    z-index: 4;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.minusbtn,
+.plusbtn{
+    font-size: 20px;
+    color: white;
+    z-index: 4;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.minusbtn{
+    bottom: 20px;
+    left: 60px;
+}
+
+.minusbtn:hover,
+.plusbtn:hover,
+.backbtn:hover{
+    cursor: pointer;
+}
+
+.modelPre{
+    color: white;
+    width: 300px;
+    height: 300px;
+    margin: 0;
+}
+
+.modelPre:hover{
+    opacity: 0.9;
+    cursor: zoom-in;
+}
+  
+.modelaftr:hover{
+    cursor: grab;
+}
+
+.evals{
+    font-size: 28px;
+    display: grid;
+    grid-column: 1 / 3;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr 1fr 1fr;
+}
+
+.evals h2{
+    font-size: 34px;
+    display: flex;
+    flex-direction: column;
+    grid-row: 1 / 1;
+    margin: 10px 0 0 0;
+    grid-column: 1 / 3;
+}
+
+.evals h2 p{
+    margin: 10px 0 0 0;
+}
+
+.datarep{
+    margin: 0 0 0 100px;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+}
+
+.datarep span{
+    margin: 5px;
+}
+
+.des{
+    font-size: 16px;
+    color: rgb(50, 50, 50);
+}
+
+.descriptionText{
+    overflow-y: auto;
+    height: 200px;
+    grid-row: 2 / 5;
+    grid-column: 1 / 3;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(110, 110, 110, 0.705);
+    font-weight: normal;
+}
+
+@media (max-width: 500px) {
+    .modelPre:hover{
+        opacity: 1;
+        cursor: default;
+    }
+      
+    .mdimagewrap .modelaftr{
+        width: 700px;
+        height: 700px;
+        z-index: 3;
+    }
+    
+    .mdimagewrap {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 20px;
+        width: 90vw;
+        height: inherit;
+    }
+    
+    .backbtn{
+        font-size: 40px;
+        color: white;
+        z-index: 4;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    
+    .minusbtn,
+    .plusbtn{
+        font-size: 20px;
+        color: white;
+        z-index: 4;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+    
+    .minusbtn{
+        bottom: 20px;
+        left: 60px;
+    }
+    
+    .minusbtn:hover,
+    .plusbtn:hover,
+    .backbtn:hover{
+        cursor: pointer;
+    }
+    
+    .modelPre{
+        justify-self: center;
+        grid-row: 1 / 1;
+        color: white;
+        width: 300px;
+        height: 300px;
+        margin: 0;
+    }
+    
+    .modelPre:hover{
+        opacity: 0.9;
+        cursor: zoom-in;
+    }
+      
+    .modelaftr:hover{
+        cursor: grab;
+    }
+    
+    .evals{
+        font-size: 28px;
+        display: flex;
+        flex-direction: column;
+        grid-column: 1 / 3;
+    }
+    
+    .evals h2{
+        font-size: 34px;
+        display: flex;
+        flex-direction: column;
+        grid-row: 1 / 1;
+        margin: 10px 0 0 0;
+        grid-column: 1 / 3;
+    }
+    
+    .evals h2 p{
+        margin: 10px 0 0 0;
+    }
+    
+    .datarep{
+        grid-row: 2 / 3;
+        margin: 0 0 0 10px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        font-size: 24px;
+    }
+    
+    .datarep span{
+        margin: 5px;
+    }
+    
+    .des{
+        font-size: 16px;
+        color: rgb(50, 50, 50);
+    }
+    
+    .descriptionText{
+        overflow-y: auto;
+        height: 200px;
+        grid-row: 2 / 5;
+        grid-column: 1 / 3;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: rgba(110, 110, 110, 0.705);
+        font-weight: normal;
+    }
+  }

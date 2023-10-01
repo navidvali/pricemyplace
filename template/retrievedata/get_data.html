@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}get data{% endblock %}
+
+{% block head_css %}
+    <link rel="stylesheet" type="text/css" href="{%  static  '/css/base.css'  %}" />
+    <link rel="stylesheet" type="text/css" href="{%  static  '/css/retrievedata/get_data.css'  %}" />
+{% endblock %}
+{% block content %}
+<div class="wrap grid">
+    <div class="side" id="side">
+        <h1 class="topic">recieved data:</h1>
+        <a href="{% url 'get_data' %}" class="load" id="wait">load more</a>
+        <a href="{% url 'list_homes' %}" class="load">all homes</a>
+        <a href="{% url 'guess_the_price' %}" class="load">guess price</a>
+    </div>
+    <div class="all_data">
+        {% for place in places %}
+            <div class="home grid">
+                <div class="grid col">
+                    <span class="field">meters: {{ place.meters }}</span>
+                    <span class="field">year: {{ place.year }}</span>
+                    <span class="field">price: {{ place.price }}</span>
+                </div>
+                <div class="grid col">
+                    <span class="field">rooms: {{ place.rooms }}</span>
+                    <span class="field">floor: {{ place.floor }}</span>
+                    <span class="field">code: {{ place.code }}</span>
+                </div>
+                <span class="">url: {{ place.url }}</span>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+{% block js %}
+    <script src='{%  static  "js/retrievedata/wait.js"  %}'></script>
+{% endblock %}

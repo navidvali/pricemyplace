@@ -1,0 +1,156 @@
+.poster{
+    margin: 50px 0 0 270px;
+}
+
+:root {
+    --text: #d60000;
+    --line: #ff0000;
+    --line-active: rgb(164, 68, 68);
+}
+
+.lineWrap,
+.lineWrap1,
+.lineWrap2,
+.lineWrap3 {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    margin: 0 var(--spacing, 0px);
+    transition: margin 0.25s;
+    cursor: pointer;
+}
+
+span svg {
+    width: 76px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 7px) translateZ(0);
+    fill: none;
+    stroke: var(--stroke, var(--line));
+    stroke-linecap: round;
+    stroke-width: 2px;
+    stroke-dasharray: var(--offset, 69px) 278px;
+    stroke-dashoffset: 361px;
+    transition: stroke 0.25s ease var(--stroke-delay, 0s), stroke-dasharray 0.35s;
+}
+span:hover {
+    --spacing: 4px;
+    --stroke: var(--line-active);
+    --stroke-delay: 0.1s;
+    --offset: 180px;
+}
+
+.posterWrap{
+    position: relative;
+    opacity: 0;
+    margin: 100px 0 0 0;
+    z-index: 2;
+}
+
+.lineWrap{
+    right: 12%;
+    position: absolute;
+    top: 59%;
+}
+
+.lineWrap1{
+    right: 30%;
+    position: absolute;
+    top: 59%;
+}
+.lineWrap2{
+    right: 49%;
+    position: absolute;
+    top: 59%;
+}
+.lineWrap3{
+    right: 55%;
+    position: absolute;
+    top: 96%;
+}
+
+.mainWrap{
+    margin: 150px 0 0 0;
+	display: flex;
+    background: rgb(34, 34, 34);
+}
+
+.dataWrap{
+    margin: 50px 0 0 100px;
+    width: 300px;
+    height: 400px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 #00ADB5;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.dataWrap{
+    /* animation: gradient 15s linear infinite; */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    margin: 50px 100px 0 0;
+}
+
+/* @keyframes gradient {
+	0% {
+        color: white;
+	}
+	20% {
+        color: black;
+	}
+    100%{
+        color: white;
+    }
+} */
+
+.moving_data_st{
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    font-size: 100px;
+    position: absolute;
+    right: 300px;
+    top: 40%
+}
+
+.text{
+    margin: 200px 0 0 350px;
+    color: rgb(220, 219, 219);
+    opacity: 0;
+    font-size: 30px;
+    z-index: 2;
+}
+
+@media (max-width: 500px) {
+    .poster{
+        margin: 0 0 20px 0;
+        width: fit-content;
+    }
+    .posterWrap{
+        position: relative;
+        opacity: 0;
+        margin: 0;
+        z-index: 2;
+        width: fit-content;
+    }
+    .mainWrap{
+        margin: 150px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        background: rgb(34, 34, 34);
+    }
+    .text{
+        margin: 10px 0 20px 50px;
+        font-size: 26px;
+    }
+}

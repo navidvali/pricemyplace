@@ -1,0 +1,128 @@
+.navWrap{
+    position: absolute;
+    width: 100vw;
+    height: 80px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 11% 1% 11% 1% 11% 50% 15%;
+    z-index: 2;
+}
+
+.title{
+    font-family: 'Dancing Script', 'Amatic SC', 'Brush Script MT', cursive;
+    font-size: 50px;
+    margin: 0 200px 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    color: white;
+}
+
+.link{
+    height: 50%;
+    font-size: 24px;
+    margin: 10%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    color: white;
+}
+
+.price{
+    width: 150px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: #00ADB5;
+    padding: 10px 10px 13px 10px;
+}
+
+.line{
+    height: 50px;
+    border-radius: 5px;
+}
+
+.activelink{
+    color: #00ADB5;
+}
+
+.log:hover{
+    cursor: pointer;
+}
+
+/* .home{
+    animation: gradient 15s linear infinite;
+}
+
+@keyframes gradient {
+	0% {
+        color: white;
+	}
+	60% {
+        color: black;
+	}
+    80%{
+        color: white;
+    }
+} */
+
+@media (max-width: 500px) {
+    .navWrap{
+        align-items: center;
+        grid-template-columns: 11% 1% 11% 1% 11% 50% 15%;
+        z-index: 2;
+    }
+
+    .burgerMask{
+        display: none;
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+    }
+
+    .burgerBtn{
+        color: white;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    .burger{
+        color: white;
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        width: 200px;
+        height: 400px;
+        background-color: rgb(255, 255, 255);
+        z-index: 2;
+    }
+    
+    .title{
+        position: absolute;
+        left: 10px;
+        top: 10px; 
+        font-size: 20px;
+        margin: 0;
+        color: white;
+    }
+    
+    .link{
+        height: 50%;
+        font-size: 24px;
+        margin: 10%;
+        color: black;
+    }
+    
+    .price{
+        width: 150px;
+        border-radius: 0;
+        background-color: transparent;
+        padding: 0;
+    }
+}

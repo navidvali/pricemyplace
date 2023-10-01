@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0e1bc2f6.css",
+    "main.js": "/static/js/main.68ef6d1d.js",
+    "static/media/inside_home2.png": "/static/media/inside_home2.3ba70f69bfd1448841a2.png",
+    "static/media/dark_house2.png": "/static/media/dark_house2.5cd028cd52567f9fec91.png",
+    "static/media/yellow_chair.jpg": "/static/media/yellow_chair.c81a226dbc3d06b7e618.jpg",
+    "static/media/jungle_house2.jpg": "/static/media/jungle_house2.0e22c3850822d696739c.jpg",
+    "static/media/main.png": "/static/media/main.d19f0d564f65fb0ceb53.png",
+    "static/media/databse4.png": "/static/media/databse4.6b38341b9ef5f8beb586.png",
+    "static/media/poster3.png": "/static/media/poster3.985eb978f29dc5ea8353.png",
+    "static/media/poster2.png": "/static/media/poster2.12d9c2590994efc5cb06.png",
+    "static/media/stacked-waves-haikei.svg": "/static/media/stacked-waves-haikei.6532e0fbed9926bc4d8b94b77743ce18.svg",
+    "static/media/stacked-waves-haikei2.svg": "/static/media/stacked-waves-haikei2.bdc7c3bb06924627b20ab18021a2e19f.svg",
+    "static/media/stacked-waves-haikei_res.svg": "/static/media/stacked-waves-haikei_res.de8c8a2bca42c5dd54b6b399d234c74e.svg",
+    "static/media/layered-steps-haikei.svg": "/static/media/layered-steps-haikei.54a7bfad1c60ad8b1d27e11dee876a76.svg",
+    "static/media/blob-scene-haikei.svg": "/static/media/blob-scene-haikei.f89852bd6e53602c67c99fb6787d9d8e.svg",
+    "index.html": "/index.html",
+    "main.0e1bc2f6.css.map": "/static/css/main.0e1bc2f6.css.map",
+    "main.68ef6d1d.js.map": "/static/js/main.68ef6d1d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e1bc2f6.css",
+    "static/js/main.68ef6d1d.js"
+  ]
+}

@@ -1,0 +1,27 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="home, price" />
+    <meta
+      name="description"
+      content="price my place"
+    />
+    {% block head_css %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href='{%  static  "font-awesome/css/font-awesome.min.css"  %}'>
+</head>
+<body>
+    <canvas id="c"></canvas>
+    {% block content %}
+    {% endblock %}
+    <script src='{%  static  "js/base.js"  %}'></script>
+    {% block js %}
+    {% endblock %}
+</body>
+
+</html>

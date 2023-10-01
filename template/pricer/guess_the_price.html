@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}price my place{% endblock %}
+
+{% block head_css %}
+    <link rel="stylesheet" type="text/css" href="{%  static  '/css/base.css'  %}" />
+    <link rel="stylesheet" type="text/css" href="{%  static  '/css/pricer/guess_the_price.css'  %}" />
+{% endblock %}
+{% block content %}
+<div class="wrap">
+    <h1 class="topic">guess_the_price</h1>
+    <form method="POST" action="{% url 'guess_the_price' %}" class="formed">
+        {% csrf_token %}
+        <div class="field">
+            <label for="meter" class="label">meter: </label>
+            <input type="number" min="30" max="1000" name="meter" id="meter" class="input" required><br>
+        </div>
+        <div class="field">
+            <label for="year" class="label">year: </label>
+            <input type="number" min="1300" max="1401" name="year" id="year" class="input" required><br>
+        </div>
+        <div class="field">
+        <label for="room" class="label">room: </label>
+        <input type="number" min="0" max="10" name="room" id="room" class="input" required><br>
+        </div>
+        <div class="field">
+        <label for="floor" class="label">floor: </label>
+        <input type="number" min="1" max="50" name="floor" id="floor" class="input" required><br>
+        </div>
+        <button class="button" role="button">submit</button>
+    </form>
+    <p class="answer">
+        {% if answer %}
+            <h2 class="pre">prediction: تومان{{ answer }}</h2>
+        {% endif %}
+    </p>
+</div>
+{% endblock %}
